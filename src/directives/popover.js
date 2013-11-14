@@ -36,7 +36,7 @@ angular.module('$strap.directives')
 
         // Handle data-unique attribute
         if(!!attr.unique) {
-          element.on('show', function(ev) { // requires bootstrap 2.3.0+
+          element.on('click', function(ev) {
             // Hide any active popover except self
             $('.popover.in').each(function() {
               var $this = $(this),
